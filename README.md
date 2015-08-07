@@ -23,6 +23,10 @@ _You then only need to start up a local PHP server from with in the "web" direct
 
 _This project Makes use of PHP, the micro-framework [Silex](http://silex.sensiolabs.org/), and uses [Twig](http://twig.sensiolabs.org/) templates._
 
+## To Do
+
+_Link assets (css and js)_ 
+
 
 ### Legal
 

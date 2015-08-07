@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <title>foo</title>
+        <title>Address books</title>
 
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
@@ -13,6 +13,19 @@
        
         <style> 
              /*  How on Earth do you link to a local style sheet? Can't get this to work :( http://silex.sensiolabs.org/doc/cookbook/assets.html  */ 
+        
+        h2 {
+            margin-bottom: 1.5em;
+        }
+
+        input{
+            width: 100%;
+            display: block;
+        } 
+        section{ 
+            margin-bottom: 60px;
+        }
+
         </style>
 
         
@@ -21,24 +34,30 @@
     </head>
     <body>
 
-        <div class="wrapper">
+        <div class="container-fluid">
 
             <header class="page-header">
 
-                <h1>Address Book</h1>    
+                <h1 class="text-center">Address Book</h1>    
 
             </header>
 
 
-            <section class="">
+            <section class="col-md-6 col-md-offset-3">
 
                  
                 {% if contacts is not empty %}
                     
-                    <p>All of your current contacts</p>
+                    <h2 class="text-center" >All of your current contacts</h2>
                     <ul>
                         {% for contact in contacts %}
-                            <li>{{ contact.getName }} <br /> {{ contact.getPhone }} <br /> {{ contact.getAddress }} /></li>
+                            <li>
+                                <address>
+                                    <strong>{{ contact.getName }}</strong><br>
+                                    {{ contact.getAddress }}<br>
+                                    <strong>{{ contact.getPhone }}</strong><br />
+                                </address>
+                            </li>
                         {% endfor %}
                     </ul>
 
@@ -46,36 +65,34 @@
 
                 <form action='/contacts' method='post'>
                     
-                    <label for='name'>Add contact's name:</label>
-                    <input id='name' name='name' type='text' value='exp: Bruce Wayne'>
+                    <div class='form-group'>
+                        <label for='name'>Add contact's name:</label>
+                        <input id='name' class='form-control' name='name' type='text' placeholder='Bruce Wayne'>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for='phone'>Add contact's phone number:</label>
+                        <input id='phone' class="form-control" name='phone' type='tel' placeholder='555 555 5555'>
+                    </div>
 
-                    <label for='phone'>Add contact's phone number:</label>
-                    <input id='phone' name='phone' type='tel' value='exp: 555 555 5555'>
+                    <div class="form-group">
+                        <label for='address'>Add contact's address:</label>
+                        <input id='address' class='form-control' name='address' type='address' placeholder='1007 Mountain Drive, Gotham City, IL 60035'>
+                    </div>
 
-                    <label for='address'>Add contact's address:</label>
-                    <input id='address' name='address' type='address' value='exp: 1007 Mountain Drive, Gotham City, IL 60035'>
+                    <div class="form-group">
+                        <button type='submit' type='button' class='btn btn-primary'>Add this contact!</button>
+                    </div>
 
-                    <button type='submit'>Add this contact!</button>
-                
                 </form>
 
-                <form action='/delete_places' method='post'>
-                    <button type='submit'>Delete your list of contacts!</button>
+                <form action='/delete_contacts' method='post'>
+                    <button type='submit' type='button' class='btn btn-danger'>Delete your list of contacts!</button>
                 </form>
 
             </section>    
 
-        </div> <!-- end of wrapper -->
-
-        <footer class="" >
-
-            <div class="">
-        	  
-                
-
-            </div>
-
-        </footer>
+        </div> <!-- end of container -->
 
         
     </body>

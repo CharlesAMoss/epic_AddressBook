@@ -13,6 +13,11 @@
        
         <style> 
              /*  How on Earth do you link to a local style sheet? Can't get this to work :( http://silex.sensiolabs.org/doc/cookbook/assets.html  */ 
+        
+        address, .return {
+            font-size: 1.5em;
+        }
+
         </style>
 
         
@@ -21,41 +26,34 @@
     </head>
     <body>
 
-        <div class="wrapper">
+        <div class="container-fluid">
 
             <header class="page-header">
 
-                <h1>Address Book</h1>    
+                <h1 class="text-center">Address Book</h1>    
 
             </header>
 
 
-            <section class="">
+            <section class="col-md-6 col-md-offset-3 text-center">
 
                  
                 <h2>You have a new contact:</h2>
                 
-                <p>{{ newcontact.getName }}</p>
-                <p>{{ newcontact.getPhone }}</p>
-                <p>{{ newcontact.getAddress }}</p>
+                <address>
+                    <strong>{{ newcontact.getName }}</strong><br>
+                    {{ newcontact.getAddress }}<br>
+                    <strong>{{ newcontact.getPhone }}</strong><br />
+                </address>
+                            
                 
 
-                <p><a href='/'>View your contacts!</a></p>
+                <p class="return" ><a href='/'>View your contacts!</a></p>
 
         
             </section>
 
-        </div> <!-- end of wrapper -->
-
-        <footer class="" >
-
-            <div class="">
-        	  
-                
-
-            </div>
-
-        </footer>
+        </div> <!-- end of container -->
 
         
     </body>
