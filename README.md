@@ -6,7 +6,7 @@
 
 ## Description
 
-_By filling out a form, you can record a contacts name, phone number, and address. You will be able to view all of your contacts listed in the order that you have entered them. These will be stored via cookies in your browser, so you will be able to return to your list even after you have closed your browser. You also have the option of deleting the full list. Be careful, once you have deleted your list, you will need to re-enter the information, there is no going back._
+_By filling out a form, you can record a contact's name, phone number, and address. You will be able to view all of your contacts listed in the order that you have entered them. These will be stored via cookies in your browser, so you will be able to return to your list even after you have closed your browser. You also have the option of deleting the full list. Be careful, once you have deleted your list, you will need to re-enter the information, there is no going back._
 
 ## Setup
 
@@ -16,12 +16,12 @@ When installing from source you may notice that once you have cloned this repo, 
 $ composer install
 ```
 
-_You then only need to start up a local PHP server from with in the "web" directory within the projects folder and point your browser to whatever local host server you have created._  
+_You then only need to start up a local PHP server from within the "web" directory within the project's folder and point your browser to whatever local host server you have created._  
 
 
 ## Technologies Used
 
-_This project Makes use of PHP, the micro-framework [Silex](http://silex.sensiolabs.org/), and uses [Twig](http://twig.sensiolabs.org/) templates._
+_This project makes use of PHP, the micro-framework [Silex](http://silex.sensiolabs.org/), and uses [Twig](http://twig.sensiolabs.org/) templates._
 
 ## To Do
 
