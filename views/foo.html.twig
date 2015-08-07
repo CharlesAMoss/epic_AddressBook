@@ -25,39 +25,56 @@
 
             <header class="page-header">
 
-                <h1></h1>    
+                <h1>Address Book</h1>    
 
             </header>
 
 
             <section class="">
 
-                <article class="">
-
-                    <h2 class="">FOO!</h2>
-
-                    <p></p>
-
-
-
-                </article>
-
-                <aside class="">
-
-                    <h4 class=""></h4>
-                    <span class=""></span>
-
+                 
+                {% if contacts is not empty %}
                     
-                </aside>
+                    <p>All of your current contacts</p>
+                    <ul>
+                        {% for contact in contacts %}
+                            <li>{{ contact.getName }} <br /> {{ contact.getPhone }} <br /> {{ contact.getAddress }} /></li>
+                        {% endfor %}
+                    </ul>
 
-            </section>
+                {% endif %}
+
+                <form action='/contacts' method='post'>
+                    
+                    <label for='name'>Add contact's name:</label>
+                    <input id='name' name='name' type='text'>
+
+                    <label for='phone'>Add contact's phone number:</label>
+                    <input id='phone' name='phone' type='tel'>
+
+                    <label for='address'>Add contact's address:</label>
+                    <input id='address' name='address' type='address'>
+
+                    <button type='submit'>Add your contact!</button>
+                
+                </form>
+
+                
+                
+
+
+                <form action='/delete_places' method='post'>
+                    <button type='submit'>Delete your list of contacts!</button>
+                </form>
 
         </div> <!-- end of wrapper -->
 
         <footer class="" >
 
             <div class="">
-        	   <p> Copyright 2015 </p>
+        	  
+                
+
             </div>
 
         </footer>

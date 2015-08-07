@@ -1,12 +1,12 @@
 # _Address Book_
 
-##### _Reacord, display and reset contact information, 8/7/2015_
+##### _Record, display and reset contact information, 8/7/2015_
 
-#### By Charles Moss**_
+#### By Charles Moss
 
 ## Description
 
-_By filling out a form, you can record a contacts name, phone number, and address. You will be able to view all of your contacts listed in the order that you have entered them. These will be stored via cookies in your browser, so you will be able to return to your list even after you have closed your browser. You also have the option of deleting the full list. Be careful, once you have deleted your list, you will need to re-enter the information, there is no going back. _
+_By filling out a form, you can record a contacts name, phone number, and address. You will be able to view all of your contacts listed in the order that you have entered them. These will be stored via cookies in your browser, so you will be able to return to your list even after you have closed your browser. You also have the option of deleting the full list. Be careful, once you have deleted your list, you will need to re-enter the information, there is no going back._
 
 ## Setup
 
@@ -22,6 +22,7 @@ _You then only need to start up a local PHP server from with in the "web" direct
 ## Technologies Used
 
 _This project Makes use of PHP, the micro-framework [Silex](http://silex.sensiolabs.org/), and uses [Twig](http://twig.sensiolabs.org/) templates._
+
 
 ### Legal
 
