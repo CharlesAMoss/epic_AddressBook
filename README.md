@@ -25,7 +25,7 @@ _This project makes use of PHP, the micro-framework [Silex](http://silex.sensiol
 
 ## To Do
 
-_Link assets (css and js)_ 
+_Link assets (js)_ 
 
 
 ### Legal

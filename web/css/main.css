@@ -9,221 +9,36 @@ html {
 body {
 	background: #fff;
 	color: #000;
-	font-family: Tahoma, Verdana, sans-serif;
 	margin: 0 auto;
 	width: 100%;
 	height: 100%;
-
 }
 
-/* layout =================== */
-
-.site__title, nav, section, .footer__content {
-	display: block;
-	margin-left: 20%;
-	margin-right: 20%;
-	width: 60%;
+section{ 
+    margin-bottom: 60px;
 }
 
-.site__logo {
-	border-radius: 50%;
-	border: 1px solid #9faab1;
-	display: block;
-	margin: 0;
-	width: 100px;
-	position: absolute;
-	top: 40px;
-	right: 22%;
+input{
+    width: 100%;
+    display: block;
+} 
+
+/* typography */
+
+body {
+	font-family: Tahoma, Verdana, sans-serif;
 }
 
 
-header {
-    background: #f5f2f0;
-	background: url("../images/header-background.png");
-	border-bottom: 1px solid #f5f2f0;
-	padding: 100px 0 50px 0;
-	margin-bottom: 40px;
+h2 {
+    margin-bottom: 1.5em;
 }
 
-.wrapper {
-	min-height: 100%;
-  	margin-bottom: -100px;
+address, .return {
+    font-size: 1.5em;
 }
 
-.wrapper:after {
-  content: "";
-  display: block;
-}
-
-.site__footer, .wrapper:after {
-  height: 100px;
-}
-
-.main__article {
-	width: 66.666666666%;
-	padding-left: 20px;
-	float: left;
-}
-
-.interest {
-	width: 33.333333333%;
-	padding: 20px;
-	float: right;
-
-}
-
-.site__footer {
-	background: #7e8e97;
-	border-top: 1px solid #2d3438;
-}
-
-.footer__content {
-	padding: 20px;
-	color: #2d3438;
-}
-
-/* typography =============== */
-
-.site__title {
-	color: #848484;
-	font-size: 3rem;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-weight: 200;
-	max-width: 576px;
-	padding-left: 20px
-}
-
-.main__title {
-	color: #7e8e97;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-weight: 200;
-}
-
-.interest__title {
-	color: #848484;
-	font-size: 1.2rem;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-weight: 400;
-	margin: 0 0 .5rem 0;
-	line-height: 1;
-}
-
-.interest__subject {
-	color: #ea4909;
-	font-style: italic;
-	display: block;
-	margin-bottom: 1rem;
-	font-size: .9rem;
-}
-
-.main__article {
-	font-size: 1rem;
-  	line-height: 24px;
-  	font-family: georgia, serif;
-}
-
-.teams__item span, p{
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-/* nav ======================= */
-
-.menu {
-	margin-top: -99px;
-
-}
-
-.menu__row {
-	background: #fff;
-	padding: 20px;
-	margin: 0;
-	border-radius: 1px;
-}
-
-.menu__list {
-	list-style: none;
-	float: left;
-	margin-right: 20px;
-}
-
-.menu__link {
-	color: #5BDEFF;
-	text-decoration: none;
-}
-
-.current {
-	padding-bottom: 6px;
-	border-bottom: 1px solid #5bdeff;
-}
-
-/* content =================== */
-
-
-/* ================== picture gallery */
-
-.gallery {
-	max-width: 100%;
-	padding: 0;
-	margin: 0;
-}
-
-.gallery__picture {
-	list-style: none;
-}
-
-.gallery__picture img{
-	width: 45%;
-	margin: 0 5% 1em 0;
-	float: left;
-}
-
-
-/* ================== sports page */
-
-.teams {
-	padding: 0;
-	margin: 0;
-	font-family: inherit;
-}
-
-.teams__item {
-	list-style: none;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-	border-bottom: 1px solid  #ea4909;
-}
-
-.teams__item:last-child {
-	border-bottom: none;
-}
-
-.teams__sport {
-	display: block;
-	padding-bottom: 10px;
-	font-size: 1.5rem;
-	font-style: italic;
-}
-
-.teams__logo {
-	padding: 5px;
-	margin: 0 10px 10px 0;
-	float: left;
-	border-radius: 5px;
-}
-
-.teams__name {
-	display: block;
-	font-weight: 700;
-	font-size: 1.3rem;
-	margin-bottom: .5rem;
-
-}
-
-.teams__info {
-	margin-top: 0;
-}
-
-/* clear fix ================ */
+/* utility */        
 
 .group:after {
     content: "";

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
     <html>
     <head>
+    
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -10,26 +11,7 @@
         <meta name="viewport" content="width=device-width">
        
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
-       
-        <style> 
-             /*  How on Earth do you link to a local style sheet? Can't get this to work :( http://silex.sensiolabs.org/doc/cookbook/assets.html  */ 
-        
-        h2 {
-            margin-bottom: 1.5em;
-        }
-
-        input{
-            width: 100%;
-            display: block;
-        } 
-        section{ 
-            margin-bottom: 60px;
-        }
-
-        </style>
-
-        
-
+        <link rel='stylesheet' href='./css/main.css'>
 
     </head>
     <body>
@@ -42,10 +24,8 @@
 
             </header>
 
-
             <section class="col-md-6 col-md-offset-3">
 
-                 
                 {% if contacts is not empty %}
                     
                     <h2 class="text-center" >All of your current contacts</h2>
